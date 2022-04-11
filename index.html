@@ -5,12 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>W3.CSS Template</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="./assets/img/icon/icons8_music.ico" type="image/x-icon">
     <link rel="stylesheet" href="./assets/style.css">
 </head>
 <body>
     <div id="page">
-        <header>
+        <header id="header">
             <!-- Begin : Nav-->
             <ul id="nav">
                 <li><a href="#">Home</a></li>
@@ -18,7 +18,7 @@
                 <li><a href="#tour">Tour</a></li>
                 <li><a href="#contact">Contact</a></li>
                 <li>
-                    <a href="">More
+                    <a href="#">More
                         <i class="fa fa-caret-down"></i>
                     </a>
                     <ul class="subnav">
@@ -32,19 +32,24 @@
 
             <!-- Begin: Search-->
             <div class="search-btn">
-                <i class="search-icon fa fa-search"></i>
+                <i class="fa fa-search"></i>
             </div>
-            <!--End: Search-->
+
+            <!--Menu button in mobile-->
+            <div id="menu-btn" class="mobile-menu-btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
         </header>
 
+        <!--Begin Banner-->
         <div id="banner">
             <div class="text-content">
                 <h2 class="text-heading">Chicago</h2>
                 <div class="text-description">Thankyou,Chicago - A night we don't forget</div>
             </div>
-            
         </div>
 
+        <!--Begin Content-->
         <div id="content">
             <!--About-section-->
             <div id="band" class="content-section">
@@ -55,17 +60,17 @@
                 </p>
                 
                 <div class="row members-list">
-                    <div class="col col-3 member-item text-center">
+                    <div class="col col-3 s-col-full mt-32 text-center">
                         <div class="member-name">Name</div>
                         <img src="./assets/img/member/bandmember.jpg" alt="Name" class="member-img">
                     </div>
 
-                    <div class="col col-3 member-item text-center">
+                    <div class="col col-3 s-col-full mt-32 text-center">
                         <div class="member-name">Name</div>
                         <img src="./assets/img/member/bandmember.jpg" alt="Name" class="member-img">
                     </div>
 
-                    <div class="col col-3 member-item text-center">
+                    <div class="col col-3 s-col-full mt-32 text-center">
                         <div class="member-name">Name</div>
                         <img src="./assets/img/member/bandmember.jpg" alt="Name" class="member-img">
                     </div>
@@ -87,7 +92,7 @@
 
                         <!--Places-->
                         <div class="row places-list">
-                            <div class="col col-3">
+                            <div class="col col-3 mt-16 s-col-full">
                                 <img src="./assets/img/place/newyork.jpg" alt="newyork" class="place-img">
                                 <div class="place-content">
                                     <h3 class="place-heading">New York</h3>
@@ -95,11 +100,11 @@
                                     <div class="place-desc">
                                         Praesent tincidunt sed tellus ut rutrum sed vitae justo.
                                     </div>
-                                    <a href="#" class="btn">Buy Tickets</a>
+                                    <a href="#" class="btn s-full-width">Buy Tickets</a>
                                 </div>
                             </div>
                             
-                            <div class="col col-3">
+                            <div class="col col-3 mt-16 s-col-full">
                                 <img src="./assets/img/place/paris.jpg" alt="newyork" class="place-img">
                                 <div class="place-content">
                                     <h3 class="place-heading">Paris</h3>
@@ -107,11 +112,11 @@
                                     <div class="place-desc">
                                         Praesent tincidunt sed tellus ut rutrum sed vitae justo.
                                     </div>
-                                    <a href="#" class="btn">Buy Tickets</a>
+                                    <a href="#" class="btn s-full-width">Buy Tickets</a>
                                 </div>
                             </div>
                             
-                            <div class="col col-3">
+                            <div class="col col-3 mt-16 s-col-full">
                                 <img src="./assets/img/place/sanfran.jpg" alt="newyork" class="place-img">
                                 <div class="place-content">
                                     <h3 class="place-heading">New York</h3>
@@ -119,7 +124,7 @@
                                     <div class="place-desc">
                                         Praesent tincidunt sed tellus ut rutrum sed vitae justo.
                                     </div>
-                                    <a href="#" class="btn">Buy Tickets</a>
+                                    <a href="#" class="btn s-full-width">Buy Tickets</a>
                                 </div>
                             </div>                            
                         </div>
@@ -134,18 +139,18 @@
                 <p class="section-sub-heading">Fan? Drop a note!</p>
 
                 <div class="row contact-content">
-                    <div class="col col-2 contact-info">
+                    <div class="s-col-full col col-2 contact-info">
                         <p><i class="fa-solid fa-location-dot"></i>Chicago, US</p>
                         <p><i class="fa-solid fa-phone"></i>Phone: +00 151515</p>
                         <p><i class="fa-solid fa-envelope"></i>Email: mail@mail.com</p>
                     </div>
-                    <div class="col col-2 contact-form">
+                    <div class="s-col-full col col-2 contact-form">
                         <form action="#" method="post">
                             <div class="row">
-                                <div class="col col-2">
+                                <div class="s-col-full col col-2">
                                     <input type="text" name="" placeholder="Name" required id="" class="form-control">
                                 </div>
-                                <div class="col col-2">
+                                <div class="s-col-full col col-2">
                                     <input type="email" name="" placeholder="Email" id="" required class="form-control">
                                 </div>
                             </div>
@@ -154,7 +159,7 @@
                                     <input type="text" name="" placeholder="Message" id="" required class="form-control">
                                 </div>
                             </div>
-                            <input class="btn mt-16 pull-right" type="submit" value="SEND">
+                            <input class="btn mt-16 pull-right s-full-width" type="submit" value="SEND">
                         </form>
                     </div>
                 </div>
@@ -167,19 +172,22 @@
             </div>
             <!--End map image-->
         </div>
+        <!--End Content-->
 
         <footer>
             <div class="socials-list">
-                <a href=""><i class="social-item fa-brands fa-facebook-square"></i></a>
-                <a href=""><i class="social-item fa-brands fa-instagram"></i></a>
-                <a href=""><i class="social-item fa-brands fa-snapchat-square"></i></a>
-                <a href=""><i class="social-item fa-brands fa-pinterest-p"></i></a>
-                <a href=""><i class="social-item fa-brands fa-twitter"></i></a>
-                <a href=""><i class="social-item fa-brands fa-linkedin"></i></a>
-                <p class="copy-right">Powered by <a href="#">w3.css</a></p>
+                <a href="#"><i class="social-item fa-brands fa-facebook-square"></i></a>
+                <a href="#"><i class="social-item fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="social-item fa-brands fa-snapchat-square"></i></a>
+                <a href="#"><i class="social-item fa-brands fa-pinterest-p"></i></a>
+                <a href="#"><i class="social-item fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="social-item fa-brands fa-linkedin"></i></a>
             </div>
+            <p class="copy-right">Powered by <a href="#">w3.css</a></p>
         </footer>
-    </div>    
+    </div>
+
 </body>
+<script src="./assets/script.js"></script>
 <script src="https://kit.fontawesome.com/193366685f.js" crossorigin="anonymous"></script>
 </html>
